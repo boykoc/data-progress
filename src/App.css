@@ -1,28 +1,40 @@
-.App {
-  text-align: center;
+/**  
+ * Styling ProgressItem (organizations).
+ */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: rgba(74, 20, 140, 1);
+  color: rgba(255, 255, 255, .85);
+  padding: 1em;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.item {
+  flex-grow: 1;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.title {
+  flex-grow: 2;
+  align-self: flex-end;
+  font-size: 2em;
+  margin-bottom: 8px;
 }
 
-.App-title {
-  font-size: 1.5em;
+.app-title {
+  flex-grow: 1;
+  text-align: right;
+  font-size: 2em;
+  margin-bottom: 8px;  
 }
 
-.App-intro {
-  font-size: large;
+.value {
+  font-size: 3em;
+  color: rgba(255, 255, 255, .95);
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.value-label {
+  text-transform: capitalize;
 }

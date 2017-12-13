@@ -3,16 +3,16 @@ const Organizations = {
         {
             name: 'Organization One',
             acronym: 'OO',
-            releasedToDate: 0,
-            releasedCurrentYear: 0,
+            releasedToDate: 86,
+            releasedCurrentYear: 5,
             releasedAsOpen: 0
         },
         {
             name: 'Organization Two',
             acronym: 'OT',
-            releasedToDate: 0,
-            releasedCurrentYear: 0,
-            releasedAsOpen: 0
+            releasedToDate: 49,
+            releasedCurrentYear: 76,
+            releasedAsOpen: 4
         }
     ]
 }
