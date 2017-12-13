@@ -38,3 +38,16 @@
 .value-label {
   text-transform: capitalize;
 }
+
+/**
+ * CSS Transitions - React animations.
+ */
+ 
+.app-load-appear {
+  opacity: 0.01;
+}
+
+.app-load-appear.app-load-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
