@@ -15,7 +15,15 @@
   background-color: rgba(74, 20, 140, 1);
 }
 
+.white {
+  background-color: #FFFFFF;
+}
+
 .item {
+  flex-grow: 1;
+}
+
+.spacer {
   flex-grow: 1;
 }
 
@@ -41,6 +49,41 @@
 
 .value-label {
   text-transform: capitalize;
+}
+
+button {
+  box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+  background: transparent;
+  border: none;
+  border-radius: 3px;
+  margin: 1em;
+  padding: 1em;
+  cursor: pointer;
+  color: #C51162;
+  min-width: 10em;
+  text-transform: uppercase;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  font-weight: 600;
+}
+
+button span {
+  padding: 0 .5em;
+  vertical-align: middle;
+}
+
+button:active, button:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+button:disabled {
+  color: rgba(0, 0, 0, 0.5);
+  cursor: default;
+  background-color: rgba(0, 0, 0, 0.08);
+  box-shadow: none;
+}
+
+button:disabled svg {
+  fill: rgba(0, 0, 0, 0.4);
 }
 
 /**

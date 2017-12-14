@@ -4,7 +4,8 @@ import '../App.css';
 import ProgressItem from './ProgressItem'
 import Organizations from '../organizations'
 import { CSSTransitionGroup } from 'react-transition-group'
-
+import ArrowLeftIcon from 'react-icons/lib/fa/arrow-left'
+import ArrowRightIcon from 'react-icons/lib/fa/arrow-right'
 class App extends Component {
   state = {
     organizations: [],
@@ -39,8 +40,15 @@ class App extends Component {
             <ProgressItem organization={this.state.organizations[this.state.selectedOrganizationIndex]} />
           }
         </div>
-        <button onClick={this.handlePrevious} disabled={this.state.selectedOrganizationIndex <= 0}>Previous</button>
-        <button onClick={this.handleNext} disabled={this.state.selectedOrganizationIndex >= this.state.organizations.length - 1}>Next</button>
+        <div className='container white'>
+          <button
+            onClick={this.handlePrevious} 
+            disabled={this.state.selectedOrganizationIndex <= 0}><ArrowLeftIcon size={30} fill={'#C51162'}/><span>Previous</span></button>
+          <div className='spacer'></div>
+          <button 
+            onClick={this.handleNext} 
+            disabled={this.state.selectedOrganizationIndex >= this.state.organizations.length - 1}><span>Next</span><ArrowRightIcon size={30} fill={'#C51162'}/></button>
+          </div>
       </CSSTransitionGroup>
     );
   }
