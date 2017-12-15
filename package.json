@@ -2,8 +2,10 @@
   "name": "data-progress",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://boykoc.github.io/data-progress",
   "dependencies": {
     "chart.js": "^2.7.1",
+    "gh-pages": "^1.1.0",
     "react": "^16.2.0",
     "react-chartjs-2": "^2.6.4",
     "react-dom": "^16.2.0",
@@ -12,6 +14,8 @@
     "react-transition-group": "^1.2.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
