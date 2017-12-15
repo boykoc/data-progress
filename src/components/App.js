@@ -43,11 +43,11 @@ class App extends Component {
         <div className='container white'>
           <button
             onClick={this.handlePrevious} 
-            disabled={this.state.selectedOrganizationIndex <= 0}><ArrowLeftIcon size={30} fill={'#C51162'}/><span>Previous</span></button>
+            disabled={this.state.selectedOrganizationIndex <= 0}><ArrowLeftIcon size={30} fill={'#E91E63'}/><span>Previous</span></button>
           <div className='spacer'></div>
           <button 
             onClick={this.handleNext} 
-            disabled={this.state.selectedOrganizationIndex >= this.state.organizations.length - 1}><span>Next</span><ArrowRightIcon size={30} fill={'#C51162'}/></button>
+            disabled={this.state.selectedOrganizationIndex >= this.state.organizations.length - 1}><span>Next</span><ArrowRightIcon size={30} fill={'#E91E63'}/></button>
           </div>
       </CSSTransitionGroup>
     );
